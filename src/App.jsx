@@ -3,7 +3,7 @@ import Shop from './Pages/shop'
 import { createBrowserRouter } from 'react-router-dom'
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/TechWorld',
     element: <Home />
   },
   {
