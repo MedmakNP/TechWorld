@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #5f6d92;
+}
+.title {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+.light {
+  color: #5f6d92;
+}
+.dark {
+  color: white;
+}
+.textConnect {
+  margin: 6px;
+}
+.iconWrap {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  background-color: #5f6d92;
+  border-radius: 4px;
+}

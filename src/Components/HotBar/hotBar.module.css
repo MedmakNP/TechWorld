@@ -1,0 +1,23 @@
+.hotBar {
+  height: 40px;
+  width: 100%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.text {
+  margin-right: 25px;
+  font-size: 13px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+.dark {
+  color: white;
+}
+.light {
+  color: black;
+}

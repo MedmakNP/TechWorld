@@ -1,0 +1,54 @@
+.categoryShop {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 650px;
+}
+.container {
+  max-width: 1200px;
+}
+.title {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  margin-top: 0px;
+  text-align: center;
+}
+.slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 380px;
+  width: 380px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.dark {
+  background-color: #505053;
+}
+.light {
+  background-color: white;
+}
+.img {
+  height: 300px;
+  transition: 0.8s;
+}
+.slide:hover .img {
+  height: 330px;
+  transition: 0.8s;
+}
+.slide:hover .btn {
+  color: #5f6d92;
+  transition: 0.8s;
+}
+.btn {
+  position: absolute;
+  bottom: 30px;
+  height: 50px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #f5f5f5;
+  border: 0px;
+  border-radius: 5px;
+}

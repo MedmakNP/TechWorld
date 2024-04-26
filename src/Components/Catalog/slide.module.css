@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 475px;
+  width: 275px;
+}
+.dark {
+  background-color: #505053;
+}
+.light {
+  background-color: white;
+}
+.img {
+  height: 350px;
+}
+.name {
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.line {
+  height: 10px;
+  width: 120px;
+  margin-bottom: 10px;
+  background-color: gray;
+}
+.cost {
+  margin: 10px;
+  font-weight: 700;
+}
+.iconWrap {
+  display: flex;
+  margin-top: 10px;
+}
+.icon {
+  height: 100%;
+  width: 85%;
+  padding-left: 3px;
+}
+.borderIcon {
+  height: 40px;
+  width: 40px;
+  margin: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.borderMemory {
+  margin: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.memory {
+  margin: 5px;
+  font-size: 13px;
+}
+.btn {
+  height: 45px;
+  width: 250px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background-color: #5f6d92;
+  border: none;
+  border-radius: 7px;
+}
+.btn:hover {
+  background-color: #4b5673;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.wrapper {
+  display: none;
+}
+.container:hover {
+  height: 650px;
+  z-index: 999;
+}
+.container:hover .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container:hover .img {
+  height: 360px;
+  transition: 0.5s;
+}
+.borderIcon:hover {
+  border: 2px solid #4b5673;
+  cursor: pointer;
+}
+.borderIcon.active {
+  border: 2px solid #4b5673;
+}
+.borderMemory.active {
+  border: 2px solid #4b5673;
+}
+.borderMemory:hover {
+  border: 2px solid #4b5673;
+  cursor: pointer;
+}

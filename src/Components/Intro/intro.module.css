@@ -1,0 +1,46 @@
+.slider {
+  display: flex;
+  align-items: center;
+  height: 740px;
+  background-image: url("../../images/background.png");
+  z-index: -2;
+}
+.overlay {
+  position: absolute;
+  height: 740px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 0;
+}
+.infoWrap {
+  width: 1600px;
+  margin: 0 auto;
+  z-index: 2;
+}
+.title {
+  margin: 0px;
+  font-size: 38px;
+  font-weight: 700;
+  color: white;
+}
+.text {
+  max-width: 500px;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+.btn {
+  width: 140px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #5f6d92;
+  border: 0px;
+  border-radius: 7px;
+}
+.btn:hover {
+  color: #5f6d92;
+  background-color: white;
+  transition: 0.5s;
+}
