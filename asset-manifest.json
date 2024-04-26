@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TechWorld/static/css/main.daffcc7f.css",
-    "main.js": "/TechWorld/static/js/main.06329d46.js",
+    "main.js": "/TechWorld/static/js/main.a954e21a.js",
     "static/js/453.754f2b8a.chunk.js": "/TechWorld/static/js/453.754f2b8a.chunk.js",
     "static/media/iphone-11pro-gold.png": "/TechWorld/static/media/iphone-11pro-gold.459d4537826717560636.png",
     "static/media/iphone-11pro-silver.png": "/TechWorld/static/media/iphone-11pro-silver.da9fa05b89ed705ba79f.png",
@@ -28,11 +28,11 @@
     "static/media/bg2.png": "/TechWorld/static/media/bg2.d2ea782bff715408adcd.png",
     "index.html": "/TechWorld/index.html",
     "main.daffcc7f.css.map": "/TechWorld/static/css/main.daffcc7f.css.map",
-    "main.06329d46.js.map": "/TechWorld/static/js/main.06329d46.js.map",
+    "main.a954e21a.js.map": "/TechWorld/static/js/main.a954e21a.js.map",
     "453.754f2b8a.chunk.js.map": "/TechWorld/static/js/453.754f2b8a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.daffcc7f.css",
-    "static/js/main.06329d46.js"
+    "static/js/main.a954e21a.js"
   ]
 }
