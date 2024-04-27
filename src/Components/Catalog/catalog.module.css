@@ -16,3 +16,12 @@
   max-width: 1200px;
   margin: auto;
 }
+
+@media only screen and (max-width: 1024px){
+  .container {
+    max-width: 900px;
+  }
+  .swiperWrap {
+    max-width: 900px;
+  }
+}

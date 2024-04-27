@@ -24,8 +24,6 @@
   border: 0px;
   border-radius: 10px;
 }
-.switchTheme {
-}
 .dark {
   color: #3b3b44;
 }
@@ -60,4 +58,16 @@
 .basket:hover {
   opacity: 0.7;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container{
+    max-width: 900px;
+  }
+  .login{
+    display: none;
+  }
+  .searchInput{
+    width: 280px;
+  }
 }
