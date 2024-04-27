@@ -1,5 +1,6 @@
 import Home from './Pages/home'
 import Shop from './Pages/shop'
+import './i18n';
 import { createBrowserRouter } from 'react-router-dom'
 const router = createBrowserRouter([
   {

@@ -55,7 +55,7 @@ const catalogData = [
     img: [caseBatteryBlack, caseBatteryPink],
     parametr: ['iPhone 11 Pro Max', 'iPhone'],
     cost: [79, 79],
-    name: 'SMART BATTERY CASE FOR IPHONE'
+    name: 'SMART BATTERY CASE '
   }
 ]
 export default catalogData
