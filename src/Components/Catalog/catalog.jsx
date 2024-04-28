@@ -8,31 +8,29 @@ import { useState, useEffect } from "react";
 
 function Catalog() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [slideCount, setSlideCount] = useState(4)
-  const {t} = useTranslation()
+  const [slideCount, setSlideCount] = useState(4);
+  const { t } = useTranslation();
 
-  
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
       setWindowWidth(width);
-      if (width <=1024){
-        setSlideCount(3)
-      }else{
-        setSlideCount(4)
+      if (width <= 1024) {
+        setSlideCount(3);
+      } else {
+        setSlideCount(4);
       }
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
-
   }, []);
   return (
     <div className={styles.catalog}>
       <div className={styles.container}>
-        <h1 className={styles.title}>{t('catalog.title')}</h1>
+        <h1 className={styles.title}>{t("catalog.title")}</h1>
         <div className={styles.swiperWrap}>
           <Swiper spaceBetween={0} slidesPerView={slideCount}>
             {catalogData.map((val) => (

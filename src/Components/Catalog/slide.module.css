@@ -15,7 +15,7 @@
 .img {
   height: 350px;
 }
-.imgWrap{
+.imgWrap {
   height: 360px;
 }
 .name {
@@ -74,7 +74,7 @@
 .btn:hover {
   background-color: #4b5673;
   cursor: pointer;
-  transition: 0.3s ;
+  transition: 0.3s;
 }
 .wrapper {
   display: none;
@@ -91,7 +91,7 @@
 }
 .container:hover .img {
   height: 360px;
-  transition: 1s ;
+  transition: 1s;
 }
 .borderIcon:hover {
   border: 2px solid #4b5673;

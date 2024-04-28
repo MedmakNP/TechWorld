@@ -10,7 +10,7 @@ import { useContext } from "react";
 import { useTranslation } from "react-i18next";
 
 function Footer() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const { type } = useContext(ThemeContext);
   return (
     <div className={styles.footer}>
@@ -19,7 +19,7 @@ function Footer() {
       </p>
       <p className={styles.textConnect}>+38 (066) 000 00 00</p>
       <p className={styles.textConnect}>example@mail.com</p>
-      <p className={styles.text}>{t('footer.follow')}</p>
+      <p className={styles.text}>{t("footer.follow")}</p>
       <div className={styles.iconWrap}>
         <a href="https://www.facebook.com/">
           <div className={styles.icon}>

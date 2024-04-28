@@ -3,7 +3,7 @@ import style from "./slide.module.css";
 import { ThemeContext } from "../../Providers/ThemeProvider";
 import { useTranslation } from "react-i18next";
 function ProductSlide(props) {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   const { type } = useContext(ThemeContext);
   const { data } = props;
   const [activeImg, setActiveImg] = useState(0);
@@ -18,7 +18,7 @@ function ProductSlide(props) {
   return (
     <div className={`${style.container} ${style[type]}`}>
       <div className={style.imgWrap}>
-        <img className={style.img} src={data.img[activeImg]} alt="g" /> 
+        <img className={style.img} src={data.img[activeImg]} alt="g" />
       </div>
       <div className={style.line}></div>
       <p className={style.name}>{data.name}</p>
@@ -44,7 +44,7 @@ function ProductSlide(props) {
             </div>
           ))}
         </div>
-        <button className={style.btn}>{t('product.btn')}</button>
+        <button className={style.btn}>{t("product.btn")}</button>
       </div>
     </div>
   );

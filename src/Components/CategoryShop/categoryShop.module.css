@@ -52,8 +52,8 @@
   border: 0px;
   border-radius: 5px;
 }
-@media only screen and (max-width: 1024px){
-  .categoryShop{
+@media only screen and (max-width: 1024px) {
+  .categoryShop {
     height: 550px;
   }
   .container {

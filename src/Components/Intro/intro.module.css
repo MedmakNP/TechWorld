@@ -46,22 +46,22 @@
   transition: 0.5s;
 }
 
-@media only screen and (max-width: 1440px){
+@media only screen and (max-width: 1440px) {
   .infoWrap {
     width: 1300px;
   }
 }
-@media only screen and (max-width: 1024px){
-  .slider{
+@media only screen and (max-width: 1024px) {
+  .slider {
     height: 400px;
   }
-  .overlay{
+  .overlay {
     height: 400px;
   }
   .infoWrap {
     width: 800px;
   }
-  .text{
+  .text {
     max-width: 330px;
   }
 }

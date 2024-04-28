@@ -7,7 +7,7 @@ import Catalog from "../Components/Catalog/catalog";
 import Blog from "../Components/Blog/blog";
 import Footer from "../Components/Footer/footer";
 
-function Home() {
+function HomePage() {
   return (
     <div>
       <Header />
@@ -22,4 +22,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;

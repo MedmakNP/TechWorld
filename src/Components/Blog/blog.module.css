@@ -60,8 +60,8 @@
   color: #5f6d92;
 }
 
-@media only screen and (max-width: 1024px){
-  .blogWrap{
+@media only screen and (max-width: 1024px) {
+  .blogWrap {
     max-width: 900px;
   }
   .img {
