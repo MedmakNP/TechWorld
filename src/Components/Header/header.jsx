@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import { ThemeContext } from "../../Providers/ThemeProvider";
 import { useContext } from "react";
 import { FaMoon } from "react-icons/fa";
+import BurgerMenu from "../BurgerMenu/burgerMenu";
 
 function Header() {
   const { toggleTheme } = useContext(ThemeContext);
@@ -16,6 +17,7 @@ function Header() {
   return (
     <div className={styles.header}>
       <div className={styles.container}>
+        <BurgerMenu />
         <p className={styles.logo}>
           <b>TECH </b>WORLD
         </p>

@@ -71,3 +71,15 @@
     width: 280px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 700px;
+  }
+  .layoutWrap {
+    display: none;
+  }
+  .searchInput {
+    width: 200px;
+  }
+}

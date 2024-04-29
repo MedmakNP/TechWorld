@@ -35,7 +35,7 @@ function Blog() {
             </div>
           </div>
         </div>
-        <div className={style.blog}>
+        <div className={style.blog3}>
           <img className={style.img} src={health} alt="health" />
           <div className={`${style.textWrap} ${style[type]}`}>
             <p className={style.titleContent}>{t("blog.titlecard3")}</p>

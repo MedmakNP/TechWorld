@@ -15,7 +15,9 @@ function Catalog() {
     const handleResize = () => {
       const width = window.innerWidth;
       setWindowWidth(width);
-      if (width <= 1024) {
+      if (width <= 768) {
+        setSlideCount(2);
+      } else if (width <= 1024) {
         setSlideCount(3);
       } else {
         setSlideCount(4);
@@ -27,12 +29,13 @@ function Catalog() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+  console.log(windowWidth, slideCount);
   return (
     <div className={styles.catalog}>
       <div className={styles.container}>
         <h1 className={styles.title}>{t("catalog.title")}</h1>
         <div className={styles.swiperWrap}>
-          <Swiper spaceBetween={0} slidesPerView={slideCount}>
+          <Swiper spaceBetween={30} slidesPerView={slideCount}>
             {catalogData.map((val) => (
               <SwiperSlide>
                 <ProductSlide data={val} />

@@ -72,3 +72,23 @@
     height: 250px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+  .slide {
+    height: 330px;
+    width: 330px;
+    border-radius: 15px;
+  }
+  .img {
+    height: 260px;
+    transition: 0.8s;
+  }
+  .slide:hover .img {
+    height: 280px;
+  }
+  .swiper {
+    width: 330px;
+  }
+}

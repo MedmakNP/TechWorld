@@ -28,14 +28,13 @@ function CategoryShop() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  console.log(windowWidth, slideCount);
   return (
     <div className={styles.categoryShop}>
       <div className={styles.container}>
         <h1 className={styles.title}>{t("category.title")}</h1>
-        <Swiper spaceBetween={30} slidesPerView={slideCount}>
+        <Swiper slidesPerView={slideCount}>
           {categoryData.map((val) => (
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiper}>
               <div className={`${styles.slide} ${styles[type]}`}>
                 <img className={styles.img} src={val.img} alt={val.text} />
                 <button className={styles.btn}> {val.text} </button>

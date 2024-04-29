@@ -25,3 +25,11 @@
     max-width: 900px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 550px;
+  }
+  .swiperWrap {
+    max-width: 550px;
+  }
+}

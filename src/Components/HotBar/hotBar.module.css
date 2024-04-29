@@ -9,10 +9,11 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-.text {
+.link {
   margin-right: 25px;
   font-size: 13px;
   font-weight: 700;
+  text-decoration: none;
   opacity: 0.8;
 }
 .dark {
@@ -20,4 +21,10 @@
 }
 .light {
   color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .hotBar {
+    display: none;
+  }
 }

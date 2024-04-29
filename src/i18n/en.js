@@ -10,6 +10,8 @@ export default {
     buyers: "BUYERS",
     blog: "BLOG",
     contacts: "CONTACTS",
+    menu: "Menu",
+    languages: "Languages",
   },
   intro: {
     text: "The revolutionary system of three cameras — much more possibilities and unchanged ease of use",

@@ -10,19 +10,19 @@ function HotBar() {
   return (
     <div className={styles.hotBar}>
       <div className={styles.container}>
-        <Link to="TechWorld/" className={`${styles.text} ${styles[type]}`}>
+        <Link to="TechWorld/" className={`${styles.link} ${styles[type]}`}>
           {t("hotBar.home")}
         </Link>
-        <Link to="/shopPage" className={`${styles.text} ${styles[type]}`}>
+        <Link to="/shopPage" className={`${styles.link} ${styles[type]}`}>
           {t("hotBar.shop")}
         </Link>
-        <Link to="/buyersPage" className={`${styles.text} ${styles[type]}`}>
+        <Link to="/buyersPage" className={`${styles.link} ${styles[type]}`}>
           {t("hotBar.buyers")}
         </Link>
-        <Link to="/blogPage" className={`${styles.text} ${styles[type]}`}>
+        <Link to="/blogPage" className={`${styles.link} ${styles[type]}`}>
           {t("hotBar.blog")}
         </Link>
-        <Link to="/contactsPage" className={`${styles.text} ${styles[type]}`}>
+        <Link to="/contactsPage" className={`${styles.link} ${styles[type]}`}>
           {t("hotBar.contacts")}
         </Link>
       </div>
