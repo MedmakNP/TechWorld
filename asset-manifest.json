@@ -1,38 +1,23 @@
 {
   "files": {
-    "main.css": "/TechWorld/static/css/main.509d50dd.css",
-    "main.js": "/TechWorld/static/js/main.7506c4d2.js",
+    "main.css": "/TechWorld/static/css/main.d9201835.css",
+    "main.js": "/TechWorld/static/js/main.aafe8beb.js",
     "static/js/453.754f2b8a.chunk.js": "/TechWorld/static/js/453.754f2b8a.chunk.js",
-    "static/media/iphone-11pro-gold.png": "/TechWorld/static/media/iphone-11pro-gold.459d4537826717560636.png",
-    "static/media/iphone-11pro-silver.png": "/TechWorld/static/media/iphone-11pro-silver.da9fa05b89ed705ba79f.png",
-    "static/media/iphone-11pro-black.png": "/TechWorld/static/media/iphone-11pro-black.d897dd579b78eba59816.png",
-    "static/media/iphone11-red.png": "/TechWorld/static/media/iphone11-red.1635d3f4dc36a2e39740.png",
-    "static/media/iphone11-white.png": "/TechWorld/static/media/iphone11-white.f214f3909d7d75be25e1.png",
-    "static/media/iphone11-purple.png": "/TechWorld/static/media/iphone11-purple.b959cacd6e1398a730ac.png",
     "static/media/ipad.png": "/TechWorld/static/media/ipad.a5ed8e0bb08b826e4686.png",
-    "static/media/iphone11-black.png": "/TechWorld/static/media/iphone11-black.589446a1860f5c654fde.png",
     "static/media/case.png": "/TechWorld/static/media/case.5e37007d400b40d6b46f.png",
-    "static/media/iwatch-s6-nike-40-3.png": "/TechWorld/static/media/iwatch-s6-nike-40-3.31eb2aca6140a7aeca03.png",
-    "static/media/casebattery-xr-black-1.png": "/TechWorld/static/media/casebattery-xr-black-1.cf04447efc1efa2d51a7.png",
-    "static/media/iwatch-s6-nike-40-4.png": "/TechWorld/static/media/iwatch-s6-nike-40-4.c21b99d59501e5ca3c0e.png",
-    "static/media/casebattery-11pro-pink-1.png": "/TechWorld/static/media/casebattery-11pro-pink-1.7edd5f0400157303776f.png",
-    "static/media/case-11pro-blue-1.png": "/TechWorld/static/media/case-11pro-blue-1.61c9029fbdde639a3de6.png",
-    "static/media/case-11pro-black-1.png": "/TechWorld/static/media/case-11pro-black-1.b7be42926b2eb0ba2697.png",
     "static/media/iwatch.png": "/TechWorld/static/media/iwatch.5c1c980a3eb9c5192b48.png",
-    "static/media/case-11pro-pink-1.png": "/TechWorld/static/media/case-11pro-pink-1.064334387b6bc4416a31.png",
-    "static/media/iwatch-s3-38-4.png": "/TechWorld/static/media/iwatch-s3-38-4.0f9e6b36c3bb22b6458d.png",
     "static/media/background.png": "/TechWorld/static/media/background.3356d0904d72fd5c8628.png",
     "static/media/AirPods.png": "/TechWorld/static/media/AirPods.df230045618a8e348fde.png",
     "static/media/modern-camera.jpg": "/TechWorld/static/media/modern-camera.1ad9c96e6acc0319cc84.jpg",
     "static/media/monitor-your-health.jpg": "/TechWorld/static/media/monitor-your-health.4b6c4543a445064cd5e7.jpg",
     "static/media/bg2.png": "/TechWorld/static/media/bg2.d2ea782bff715408adcd.png",
     "index.html": "/TechWorld/index.html",
-    "main.509d50dd.css.map": "/TechWorld/static/css/main.509d50dd.css.map",
-    "main.7506c4d2.js.map": "/TechWorld/static/js/main.7506c4d2.js.map",
+    "main.d9201835.css.map": "/TechWorld/static/css/main.d9201835.css.map",
+    "main.aafe8beb.js.map": "/TechWorld/static/js/main.aafe8beb.js.map",
     "453.754f2b8a.chunk.js.map": "/TechWorld/static/js/453.754f2b8a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.509d50dd.css",
-    "static/js/main.7506c4d2.js"
+    "static/css/main.d9201835.css",
+    "static/js/main.aafe8beb.js"
   ]
 }
