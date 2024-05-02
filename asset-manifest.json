@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TechWorld/static/css/main.d9201835.css",
-    "main.js": "/TechWorld/static/js/main.aafe8beb.js",
+    "main.css": "/TechWorld/static/css/main.eb2df8f9.css",
+    "main.js": "/TechWorld/static/js/main.21f115d8.js",
     "static/js/453.754f2b8a.chunk.js": "/TechWorld/static/js/453.754f2b8a.chunk.js",
     "static/media/ipad.png": "/TechWorld/static/media/ipad.a5ed8e0bb08b826e4686.png",
     "static/media/case.png": "/TechWorld/static/media/case.5e37007d400b40d6b46f.png",
@@ -12,12 +12,12 @@
     "static/media/monitor-your-health.jpg": "/TechWorld/static/media/monitor-your-health.4b6c4543a445064cd5e7.jpg",
     "static/media/bg2.png": "/TechWorld/static/media/bg2.d2ea782bff715408adcd.png",
     "index.html": "/TechWorld/index.html",
-    "main.d9201835.css.map": "/TechWorld/static/css/main.d9201835.css.map",
-    "main.aafe8beb.js.map": "/TechWorld/static/js/main.aafe8beb.js.map",
+    "main.eb2df8f9.css.map": "/TechWorld/static/css/main.eb2df8f9.css.map",
+    "main.21f115d8.js.map": "/TechWorld/static/js/main.21f115d8.js.map",
     "453.754f2b8a.chunk.js.map": "/TechWorld/static/js/453.754f2b8a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9201835.css",
-    "static/js/main.aafe8beb.js"
+    "static/css/main.eb2df8f9.css",
+    "static/js/main.21f115d8.js"
   ]
 }
