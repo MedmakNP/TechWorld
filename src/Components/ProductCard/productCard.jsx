@@ -2,13 +2,12 @@ import { useContext, useState } from "react";
 import style from "./slide.module.css";
 import { ThemeContext } from "../../Providers/ThemeProvider";
 import { useTranslation } from "react-i18next";
-function ProductSlide(props) {
+function ProductCard(props) {
   const { t } = useTranslation();
   const { type } = useContext(ThemeContext);
   const { data } = props;
   const [activeImg, setActiveImg] = useState(0);
   const [activeCost, setActiveCost] = useState(0);
-
   const handdleClickImg = (index) => {
     setActiveImg(index);
   };
@@ -27,6 +26,7 @@ function ProductSlide(props) {
         <div className={style.iconWrap}>
           {data.img.map((val, index) => (
             <div
+              key={index}
               onClick={() => handdleClickImg(index)}
               className={`${style.borderIcon} ${index === activeImg ? style.active : ""}`}
             >
@@ -35,8 +35,9 @@ function ProductSlide(props) {
           ))}
         </div>
         <div className={style.iconWrap}>
-          {data.parametr.map((val, index) => (
+          {data.Memory.map((val, index) => (
             <div
+              key={index}
               onClick={() => handdleClickCost(index)}
               className={`${style.borderMemory} ${index === activeCost ? style.active : ""}`}
             >
@@ -50,4 +51,4 @@ function ProductSlide(props) {
   );
 }
 
-export default ProductSlide;
+export default ProductCard;

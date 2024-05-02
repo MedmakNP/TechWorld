@@ -12,6 +12,7 @@ import { useTranslation } from "react-i18next";
 function Footer() {
   const { t } = useTranslation();
   const { type } = useContext(ThemeContext);
+
   return (
     <div className={styles.footer}>
       <p className={`${styles.title} ${styles[type]}`}>

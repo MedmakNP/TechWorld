@@ -30,6 +30,7 @@
     max-width: 550px;
   }
   .swiperWrap {
-    max-width: 550px;
+    left: 80px;
+    max-width: 580px;
   }
 }

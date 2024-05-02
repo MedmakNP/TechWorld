@@ -39,3 +39,23 @@
   background-color: #5f6d92;
   transition: 0.5s;
 }
+
+@media only screen and (max-width: 1024px) {
+  .discount {
+    height: 300px;
+  }
+  .overlay {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .discount {
+    height: 220px;
+  }
+  .overlay {
+    height: 220px;
+  }
+  .title {
+    font-size: 30px;
+  }
+}

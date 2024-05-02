@@ -34,7 +34,7 @@ function CategoryShop() {
         <h1 className={styles.title}>{t("category.title")}</h1>
         <Swiper slidesPerView={slideCount}>
           {categoryData.map((val) => (
-            <SwiperSlide className={styles.swiper}>
+            <SwiperSlide key={val.id} className={styles.swiper}>
               <div className={`${styles.slide} ${styles[type]}`}>
                 <img className={styles.img} src={val.img} alt={val.text} />
                 <button className={styles.btn}> {val.text} </button>

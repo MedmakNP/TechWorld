@@ -4,7 +4,6 @@ export const ThemeContext = createContext({ type: "light" });
 
 function ThemeProvider({ children }) {
   const [type, setType] = useState("light");
-  console.log(type);
   const toggleTheme = () => {
     setType((prevType) => (prevType === "light" ? "dark" : "light"));
   };

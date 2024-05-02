@@ -80,8 +80,10 @@
   display: none;
 }
 .container:hover {
+  position: absolute;
   height: 661px;
-  z-index: 999;
+  border-radius: 5px;
+  z-index: 9;
 }
 .container:hover .wrapper {
   display: flex;

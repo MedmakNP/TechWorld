@@ -1,20 +1,17 @@
 import styles from "./catalog.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import catalogData from "../../Storage/catalogData";
-import ProductSlide from "./productSlide";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
-
+import ProductCard from "../ProductCard/productCard";
+import useData from "../../Firebase/firebaseConfig";
 function Catalog() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [slideCount, setSlideCount] = useState(4);
+  const data = useData("products");
   const { t } = useTranslation();
-
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      setWindowWidth(width);
       if (width <= 768) {
         setSlideCount(2);
       } else if (width <= 1024) {
@@ -23,22 +20,21 @@ function Catalog() {
         setSlideCount(4);
       }
     };
-
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  console.log(windowWidth, slideCount);
+
   return (
     <div className={styles.catalog}>
       <div className={styles.container}>
         <h1 className={styles.title}>{t("catalog.title")}</h1>
         <div className={styles.swiperWrap}>
           <Swiper spaceBetween={30} slidesPerView={slideCount}>
-            {catalogData.map((val) => (
-              <SwiperSlide>
-                <ProductSlide data={val} />
+            {data.map((val, id) => (
+              <SwiperSlide key={id}>
+                <ProductCard data={val} />
               </SwiperSlide>
             ))}
           </Swiper>

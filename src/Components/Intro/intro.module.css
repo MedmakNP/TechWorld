@@ -70,7 +70,7 @@
     max-width: 330px;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   .slider {
     height: 300px;
   }
