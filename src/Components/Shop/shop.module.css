@@ -1,4 +1,4 @@
-.shop {  
+.shop {
   height: 100%;
   padding-bottom: 150px;
   border-top: 1px solid #5f6d92;
@@ -10,17 +10,17 @@
 }
 .searchPanel {
   width: 260px;
-  height: 180px;
   padding: 15px;
   margin: 95px 15px 15px 15px;
   border-radius: 5px;
   box-shadow: 1.5px 2.6px 7px rgba(0, 0, 0, 0.05);
+  align-self: flex-start;
 }
 .dark {
-    background-color: #505053;
-  }
+  background-color: #505053;
+}
 .light {
-    background-color: white;
+  background-color: white;
 }
 .titleWrap {
   display: flex;
@@ -32,28 +32,67 @@
   font-weight: 700;
   margin: 20px;
 }
-.sort{
-    margin: 20px;
-    font-size: 20px;
+.sort {
+  margin: 20px;
+  font-size: 20px;
 }
 .titleFilter {
   font-size: 18px;
   font-weight: 700;
   margin-left: 10px;
 }
+.return {
+  display: none;
+}
+.return.active {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 10px 5px;
+  cursor: pointer;
+}
 .text {
   font-size: 16px;
   margin: 5px 10px;
+  cursor: pointer;
+}
+.text.active {
+  font-size: 18px;
+  padding: 5px 10px;
+  margin: 10px 15px;
+  background-color: lightgray;
 }
 .price {
-  padding: 15px 10px;
+  padding-left: 10px;
+  padding-top: 20px;
   border-top: 1px solid lightgray;
 }
-.shopPanel {
-  position: relative;
+.inputWrap {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 910px;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  width: 60px;
+  height: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 3px;
+}
+.btn {
+  width: 45px;
+  height: 25px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: lightgray;
+}
+.shopPanel {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 0px;
+  max-width: 920px;
 }
 .card {
   margin: 10px;

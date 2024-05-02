@@ -1,39 +1,59 @@
-import style from "./shop.module.css";
+import ShopView from "./shopView";
 import useData from "../../Firebase/firebaseConfig";
-import ProductCard from "../ProductCard/productCard";
-import { useContext } from "react";
-import { ThemeContext } from "../../Providers/ThemeProvider";
+import { useEffect, useState } from "react";
 
 function Shop() {
-  const { type } = useContext(ThemeContext);
   const data = useData("products");
+  const [currentData, setCurrentData] = useState(data);
+  const [minCost, setMinCost] = useState(0);
+  const [maxCost, setmaxCost] = useState(0);
+  const [activeType, setActiveType] = useState("");
+  useEffect(() => {
+    setCurrentData(data);
+  }, [data]);
 
+  const handleSortType = (value) => {
+    const dataType = data;
+    setCurrentData(dataType.filter((elem) => elem.type === value));
+    setActiveType(value);
+  };
+  const handleReturn = () => {
+    setCurrentData(data);
+    setActiveType("");
+  };
+  const onInputChangeMin = (cost) => {
+    setMinCost(cost);
+  };
+  const onInputChangeMax = (cost) => {
+    setmaxCost(cost);
+  };
+  const handleSort = () => {
+    const dataSort = currentData;
+    setCurrentData(dataSort.sort((a, b) => b.cost[0] - a.cost[0]));
+  };
+  const hendleSortReverse = () => {
+    const dataSort = currentData;
+    setCurrentData(dataSort.sort((a, b) => b.cost[0] - a.cost[0]));
+  };
+  const filterCost = () => {
+    const dataCost = data;
+    setCurrentData(
+      dataCost.filter(
+        (elem) => elem.cost[0] >= minCost && elem.cost[0] <= maxCost,
+      ),
+    );
+  };
   return (
-    <div className={style.shop}>
-      <div className={style.container}>
-        <div className={`${style.searchPanel} ${style[type]}`}>
-          <p className={style.text}>iPhone</p>
-          <p className={style.text}>AppleWatch</p>
-          <p className={style.text}>Accessories</p>
-          <p className={style.titleFilter}>Filter</p>
-          <div className={style.price}>Price</div>
-        </div>
-        <div className={style.ShopWrap}>
-          <div className={style.titleWrap}>
-            <p className={style.title}>Shop</p>
-            <div className={style.sort}>sort by</div>
-          </div>
-          <div className={style.shopPanel}>
-            {data.map((val, id) => (
-              <div className={style.card}>
-                <ProductCard key={id} data={val} />
-                <div className={style.overlay}></div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
+    <ShopView
+      currentData={currentData}
+      handleSortType={handleSortType}
+      activeType={activeType}
+      handleReturn={handleReturn}
+      onInputChangeMin={onInputChangeMin}
+      onInputChangeMax={onInputChangeMax}
+      filterCost={filterCost}
+      handleSort={handleSort}
+    />
   );
 }
 

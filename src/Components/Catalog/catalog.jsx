@@ -31,7 +31,11 @@ function Catalog() {
       <div className={styles.container}>
         <h1 className={styles.title}>{t("catalog.title")}</h1>
         <div className={styles.swiperWrap}>
-          <Swiper spaceBetween={30} slidesPerView={slideCount}>
+          <Swiper
+            spaceBetween={30}
+            slidesPerView={slideCount}
+            className={styles.swiper}
+          >
             {data.map((val, id) => (
               <SwiperSlide key={id}>
                 <ProductCard data={val} />

@@ -16,7 +16,9 @@
   max-width: 1200px;
   margin: auto;
 }
-
+.swiper {
+  height: 660px;
+}
 @media only screen and (max-width: 1024px) {
   .container {
     max-width: 900px;

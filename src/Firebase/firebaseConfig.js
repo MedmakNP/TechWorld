@@ -34,6 +34,7 @@ const db = getDatabase();
 } */
 const useData = (path) => {
   const [productData, setProductData] = useState([]);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -41,12 +42,12 @@ const useData = (path) => {
         const snapshot = await get(usersRef);
         if (snapshot.exists()) {
           setProductData(snapshot.val());
-          //console.log(snapshot.val());
         }
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
+
     fetchData();
   }, [path]);
   return productData;
