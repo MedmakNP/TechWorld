@@ -12,9 +12,11 @@ function Catalog() {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      if (width <= 768) {
+      if (width <= 580) {
+        setSlideCount(1);
+      } else if (width <= 900) {
         setSlideCount(2);
-      } else if (width <= 1024) {
+      } else if (width <= 1200) {
         setSlideCount(3);
       } else {
         setSlideCount(4);
@@ -28,16 +30,12 @@ function Catalog() {
 
   return (
     <div className={styles.catalog}>
+      <h1 className={styles.title}>{t("catalog.title")}</h1>
       <div className={styles.container}>
-        <h1 className={styles.title}>{t("catalog.title")}</h1>
         <div className={styles.swiperWrap}>
-          <Swiper
-            spaceBetween={30}
-            slidesPerView={slideCount}
-            className={styles.swiper}
-          >
+          <Swiper slidesPerView={slideCount} className={styles.swiper}>
             {data.map((val, id) => (
-              <SwiperSlide key={id}>
+              <SwiperSlide key={id} className={styles.slideWrap}>
                 <ProductCard data={val} />
               </SwiperSlide>
             ))}

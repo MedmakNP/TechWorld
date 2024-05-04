@@ -33,11 +33,11 @@
   border-radius: 10px;
   cursor: pointer;
   z-index: 1;
+  transition: 0.5s;
 }
 .btn:hover {
   color: white;
   background-color: #5f6d92;
-  transition: 0.5s;
 }
 
 @media only screen and (max-width: 1024px) {

@@ -39,21 +39,17 @@
   background-color: #5f6d92;
   border: 0px;
   border-radius: 7px;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 .btn:hover {
   color: #5f6d92;
   background-color: white;
-  transition: 0.5s;
 }
 
 @media only screen and (max-width: 1600px) {
   .infoWrap {
-    width: 1400px;
-  }
-}
-@media only screen and (max-width: 1440px) {
-  .infoWrap {
-    width: 1300px;
+    width: 85%;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -63,9 +59,7 @@
   .overlay {
     height: 400px;
   }
-  .infoWrap {
-    width: 800px;
-  }
+
   .text {
     max-width: 330px;
   }
@@ -77,14 +71,28 @@
   .overlay {
     height: 300px;
   }
-  .infoWrap {
-    width: 600px;
-  }
   .text {
     max-width: 240px;
     font-size: 16px;
   }
   .title {
     font-size: 30px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .infoWrap {
+    width: 75%;
+  }
+  .text {
+    display: none;
+  }
+  .slider {
+    height: 400px;
+  }
+  .overlay {
+    height: 400px;
+  }
+  .title {
+    padding-bottom: 30px;
   }
 }

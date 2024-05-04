@@ -1,11 +1,13 @@
 .categoryShop {
+  height: 100%;
+  padding-bottom: 80px;
+}
+.container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 650px;
-}
-.container {
   max-width: 1200px;
+  margin: 0px auto;
 }
 .title {
   padding-top: 80px;
@@ -13,8 +15,14 @@
   margin-top: 0px;
   text-align: center;
 }
+.swiper {
+  max-width: 1200px;
+}
+.slideWrap {
+  display: flex;
+  justify-content: center;
+}
 .slide {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,6 +30,7 @@
   width: 380px;
   border-radius: 15px;
   cursor: pointer;
+  transition: 0.8s;
 }
 .dark {
   background-color: #505053;
@@ -35,11 +44,9 @@
 }
 .slide:hover .img {
   height: 330px;
-  transition: 0.8s;
 }
 .slide:hover .btn {
   color: #5f6d92;
-  transition: 0.8s;
 }
 .btn {
   position: absolute;
@@ -51,12 +58,14 @@
   background-color: #f5f5f5;
   border: 0px;
   border-radius: 5px;
+  transition: 0.8s;
+  cursor: pointer;
 }
-@media only screen and (max-width: 1024px) {
-  .categoryShop {
-    height: 550px;
-  }
+@media only screen and (max-width: 1200px) {
   .container {
+    max-width: 900px;
+  }
+  .swiper {
     max-width: 900px;
   }
   .slide {
@@ -72,8 +81,11 @@
     height: 250px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .container {
+    max-width: 700px;
+  }
+  .swiper {
     max-width: 700px;
   }
   .slide {
@@ -83,12 +95,47 @@
   }
   .img {
     height: 260px;
-    transition: 0.8s;
   }
   .slide:hover .img {
     height: 280px;
   }
+}
+@media only screen and (max-width: 700px) {
+  .container {
+    max-width: 460px;
+  }
   .swiper {
-    width: 330px;
+    max-width: 460px;
+  }
+  .slide {
+    height: 460px;
+    width: 460px;
+    border-radius: 15px;
+  }
+  .img {
+    height: 360px;
+  }
+  .slide:hover .img {
+    height: 390px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .container {
+    max-width: 90%;
+  }
+  .swiper {
+    max-width: 300px;
+  }
+  .slide {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+  }
+  .img {
+    height: 250px;
+  }
+  .slide:hover .img {
+    height: 280px;
   }
 }

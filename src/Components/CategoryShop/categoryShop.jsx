@@ -7,7 +7,6 @@ import { useContext, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 function CategoryShop() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [slideCount, setSlideCount] = useState(3);
   const { type } = useContext(ThemeContext);
   const { t } = useTranslation();
@@ -15,8 +14,9 @@ function CategoryShop() {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      setWindowWidth(width);
-      if (width <= 768) {
+      if (width <= 700) {
+        setSlideCount(1);
+      } else if (width <= 900) {
         setSlideCount(2);
       } else {
         setSlideCount(3);
@@ -32,9 +32,9 @@ function CategoryShop() {
     <div className={styles.categoryShop}>
       <div className={styles.container}>
         <h1 className={styles.title}>{t("category.title")}</h1>
-        <Swiper slidesPerView={slideCount}>
+        <Swiper className={styles.swiper} slidesPerView={slideCount}>
           {categoryData.map((val) => (
-            <SwiperSlide key={val.id} className={styles.swiper}>
+            <SwiperSlide key={val.id} className={styles.slideWrap}>
               <div className={`${styles.slide} ${styles[type]}`}>
                 <img className={styles.img} src={val.img} alt={val.text} />
                 <button className={styles.btn}> {val.text} </button>

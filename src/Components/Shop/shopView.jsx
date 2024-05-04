@@ -83,7 +83,6 @@ function ShopView({
             {currentData.map((val, id) => (
               <div className={style.card}>
                 <ProductCard key={id} data={val} />
-                <div className={style.overlay}></div>
               </div>
             ))}
           </div>

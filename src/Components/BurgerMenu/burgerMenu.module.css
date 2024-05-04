@@ -3,7 +3,7 @@
 }
 .burgerIcon {
   border: none;
-  font-size: 24px;
+  font-size: 36px;
   color: white;
   background-color: #5f6d92;
   cursor: pointer;
@@ -53,7 +53,7 @@
   text-decoration: none;
   cursor: pointer;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .burgerMenu {
     display: block;
   }

@@ -6,7 +6,8 @@
   display: flex;
   align-items: center;
   height: 100%;
-  max-width: 1200px;
+  padding-left: 20px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 .link {
@@ -15,6 +16,10 @@
   font-weight: 700;
   text-decoration: none;
   opacity: 0.8;
+  transition: 0.3s;
+}
+.link:hover {
+  opacity: 1;
 }
 .dark {
   color: white;
@@ -23,13 +28,13 @@
   color: black;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .container {
-    max-width: 900px;
+    max-width: 90%;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .hotBar {
     display: none;
   }
