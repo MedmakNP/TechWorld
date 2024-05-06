@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import style from "./slide.module.css";
 import { ThemeContext } from "../../Providers/ThemeProvider";
 import { useTranslation } from "react-i18next";
@@ -6,8 +7,12 @@ function ProductCard(props) {
   const { t } = useTranslation();
   const { type } = useContext(ThemeContext);
   const { data } = props;
+  const navigate = useNavigate();
   const [activeImg, setActiveImg] = useState(0);
   const [activeCost, setActiveCost] = useState(0);
+  const handleNavigate = () => {
+    navigate(`/product/${data.id}`);
+  };
   const handdleClickImg = (index) => {
     setActiveImg(index);
   };
@@ -45,7 +50,7 @@ function ProductCard(props) {
             </div>
           ))}
         </div>
-        <button className={style.btn}>{t("product.btn")}</button>
+        <button onClick={() => handleNavigate()} className={style.btn}>{t("product.btn")}</button>
       </div>
     </div>
   );

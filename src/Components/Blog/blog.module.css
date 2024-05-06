@@ -11,6 +11,7 @@
 }
 .blogWrap {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
@@ -87,9 +88,6 @@
     max-width: 930px;
     justify-content: space-around;
   }
-  .blog3 {
-    display: none;
-  }
 }
 @media only screen and (max-width: 768px) {
   .blogWrap {
@@ -97,7 +95,18 @@
     align-items: center;
     flex-direction: column;
   }
-  .blog3 {
-    display: block;
+}
+@media only screen and (max-width: 400px) {
+  .textWrap {
+    width: 260px;
+    padding: 10px 20px;
+    background-color: white;
+  }
+  .img {
+    width: 300px;
+    height: 220px;
   }
 }
+
+
+

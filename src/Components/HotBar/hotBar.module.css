@@ -1,6 +1,11 @@
 .hotBar {
   height: 40px;
   width: 100%;
+  border-top: 2px solid #5f6d92;
+  transition: 0.5s;
+}
+.blur{
+  filter: blur(2px);
 }
 .container {
   display: flex;

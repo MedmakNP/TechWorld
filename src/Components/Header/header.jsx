@@ -1,25 +1,25 @@
 import styles from "./header.module.css";
 import leng from "../../images/leng.png";
 import login from "../../images/login.png";
-import basket from "../../images/basket.png";
 import { useTranslation } from "react-i18next";
-import { ThemeContext } from "../../Providers/ThemeProvider";
+import { BlurContext, ThemeContext } from "../../Providers/ThemeProvider";
 import { useContext } from "react";
 import { FaMoon } from "react-icons/fa";
 import BurgerMenu from "../BurgerMenu/burgerMenu";
 import Search from "../Search/search";
+import Basket from "../Basket/basket";
 
 function Header() {
   const { toggleTheme } = useContext(ThemeContext);
   const { type } = useContext(ThemeContext);
+  const { isBlurred } = useContext(BlurContext)
   const { i18n } = useTranslation();
   const { t } = useTranslation();
-
   return (
-    <div className={styles.header}>
+    <div className={styles.header}> 
       <div className={styles.headerInner}>
-        <div className={styles.container}>
-          <BurgerMenu />
+        <BurgerMenu />
+        <div className={`${styles.container} ${styles[isBlurred]}`}>
           <p className={styles.logo}>
             <b>TECH </b>WORLD
           </p>
@@ -51,10 +51,10 @@ function Header() {
             <img src={login} alt="log" />
             <p className={styles.login}>{t("header.login")} </p>
           </div>
-          <img className={styles.basket} src={basket} alt="basket" />
         </div>
+        <Basket />
       </div>
-      <div className={styles.search}>
+      <div className={`${styles.search} ${styles[isBlurred]}`}>
         <Search />
       </div>
     </div>

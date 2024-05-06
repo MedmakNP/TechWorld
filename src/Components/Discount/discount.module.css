@@ -21,6 +21,7 @@
   color: white;
   font-weight: 700;
   z-index: 1;
+  text-align: center;
 }
 .btn {
   height: 50px;
@@ -57,5 +58,13 @@
   }
   .title {
     font-size: 30px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .discount {
+    height: 420px;
+  }
+  .overlay {
+    height: 420px;
   }
 }

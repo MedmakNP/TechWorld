@@ -5,6 +5,10 @@
   background-image: url("../../images/background.png");
   background-size: cover;
   z-index: -2;
+  transition: 0.5s;
+}
+.blur{
+  filter: blur(2px);
 }
 .overlay {
   position: absolute;
@@ -31,19 +35,18 @@
   color: white;
 }
 .btn {
-  width: 140px;
-  height: 40px;
+  padding:10px 20px;
   font-size: 16px;
   font-weight: 600;
   color: white;
   background-color: #5f6d92;
-  border: 0px;
   border-radius: 7px;
   transition: all 0.5s;
   cursor: pointer;
+  text-decoration: none;
 }
 .btn:hover {
-  color: #5f6d92;
+  color: #4b5673;
   background-color: white;
 }
 

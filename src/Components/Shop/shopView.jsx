@@ -1,7 +1,7 @@
 import style from "./shop.module.css";
 import ProductCard from "../ProductCard/productCard";
 import { useContext } from "react";
-import { ThemeContext } from "../../Providers/ThemeProvider";
+import { BlurContext, ThemeContext } from "../../Providers/ThemeProvider";
 
 function ShopView({
   currentData,
@@ -14,6 +14,7 @@ function ShopView({
   handleSort,
 }) {
   const { type } = useContext(ThemeContext);
+  const { isBlurred } = useContext(BlurContext)
 
   const handleChangeMin = (event) => {
     const cost = event.target.value;
@@ -24,7 +25,7 @@ function ShopView({
     onInputChangeMax(cost);
   };
   return (
-    <div className={style.shop}>
+    <div className={`${style.shop} ${style[isBlurred]}`}>
       <div className={style.container}>
         <div className={`${style.searchPanel} ${style[type]}`}>
           <p

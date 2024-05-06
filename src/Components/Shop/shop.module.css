@@ -2,6 +2,10 @@
   height: 100%;
   padding-bottom: 150px;
   border-top: 1px solid #5f6d92;
+  transition: 0.5s;
+}
+.blur{
+  filter: blur(2px);
 }
 .container {
   display: flex;

@@ -1,15 +1,21 @@
 .headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  margin: 0 auto;
   background-color: #5f6d92;
+  
+}
+.blur{
+  filter: blur(2px);
 }
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
-  max-width: 1200px;
-  padding: 0px 20px;
-  margin: 0 auto;
+  width: 1200px;
+  transition: 0.5s;
 }
 .searchInner {
   display: block;
@@ -21,6 +27,7 @@
 }
 .logo {
   font-size: 30px;
+  margin: 15px;
   color: white;
 }
 .dark {
@@ -68,6 +75,11 @@
   }
 }
 @media only screen and (max-width: 900px) {
+  .container {
+    width: 70%;
+    justify-content: space-around;
+    padding-right: 20px;
+  }
   .layoutWrap {
     display: none;
   }
@@ -76,5 +88,13 @@
   }
   .search {
     display: block;
+    transition: 0.5s;
   }
 }
+@media only screen and (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+    color: white;
+  }
+}
+

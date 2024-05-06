@@ -1,6 +1,10 @@
 .categoryShop {
   height: 100%;
   padding-bottom: 80px;
+  transition: 0.5s;
+}
+.blur{
+  filter: blur(2px);
 }
 .container {
   display: flex;
