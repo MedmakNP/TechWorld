@@ -14,11 +14,11 @@ body {
 .swiper-button-prev {
   color: black;
   opacity: 0.8;
-} 
+}
 .layout {
   background-color: var(--bg-light);
 }
-.no-scroll{
+.no-scroll {
   overflow: hidden;
 }
 .layout.dark {
@@ -30,4 +30,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-

@@ -12,11 +12,11 @@ import Basket from "../Basket/basket";
 function Header() {
   const { toggleTheme } = useContext(ThemeContext);
   const { type } = useContext(ThemeContext);
-  const { isBlurred } = useContext(BlurContext)
+  const { isBlurred } = useContext(BlurContext);
   const { i18n } = useTranslation();
   const { t } = useTranslation();
   return (
-    <div className={styles.header}> 
+    <div className={styles.header}>
       <div className={styles.headerInner}>
         <BurgerMenu />
         <div className={`${styles.container} ${styles[isBlurred]}`}>

@@ -14,7 +14,7 @@ function ShopView({
   handleSort,
 }) {
   const { type } = useContext(ThemeContext);
-  const { isBlurred } = useContext(BlurContext)
+  const { isBlurred } = useContext(BlurContext);
 
   const handleChangeMin = (event) => {
     const cost = event.target.value;
@@ -82,8 +82,9 @@ function ShopView({
           </div>
           <div className={style.shopPanel}>
             {currentData.map((val, id) => (
-              <div className={style.card}>
-                <ProductCard key={id} data={val} />
+              <div key={id} className={style.card}>
+                <ProductCard data={val} />
+                <div className={style.overlay}></div>
               </div>
             ))}
           </div>

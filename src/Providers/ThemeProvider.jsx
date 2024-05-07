@@ -3,19 +3,18 @@ import { createContext, useMemo, useState, useEffect } from "react";
 export const ThemeContext = createContext({ type: "light" });
 export const BlurContext = createContext({ type: "blur" });
 
-
 function ThemeProvider({ children }) {
   const [type, setType] = useState("light");
   const [isBlurred, setIsBlurred] = useState("");
-  const toggleBlur = () =>{
+  const toggleBlur = () => {
     setIsBlurred((prevType) => (prevType === "" ? "blur" : ""));
-  }
+  };
 
   useEffect(() => {
     if (isBlurred) {
-      document.body.classList.add('no-scroll');
+      document.body.classList.add("no-scroll");
     } else {
-      document.body.classList.remove('no-scroll');
+      document.body.classList.remove("no-scroll");
     }
   }, [isBlurred]);
   const toggleTheme = () => {
@@ -25,10 +24,8 @@ function ThemeProvider({ children }) {
   const blurValue = useMemo(() => ({ isBlurred, toggleBlur }), [isBlurred]);
   return (
     <ThemeContext.Provider value={value}>
-    <BlurContext.Provider value={blurValue}>
-      {children}
-    </BlurContext.Provider>
-  </ThemeContext.Provider>
+      <BlurContext.Provider value={blurValue}>{children}</BlurContext.Provider>
+    </ThemeContext.Provider>
   );
 }
 

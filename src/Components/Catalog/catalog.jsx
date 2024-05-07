@@ -8,10 +8,10 @@ import useData from "../../Firebase/firebaseConfig";
 function Catalog() {
   const [slideCount, setSlideCount] = useState(4);
   const data = useData("products");
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
 
   useEffect(() => {
-      const handleResize = () => {
+    const handleResize = () => {
       const width = window.innerWidth;
       if (width <= 580) {
         setSlideCount(1);

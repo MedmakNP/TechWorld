@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 function HotBar() {
   const { type } = useContext(ThemeContext);
-  const { isBlurred } = useContext(BlurContext)
+  const { isBlurred } = useContext(BlurContext);
   const { t } = useTranslation();
   return (
     <div className={`${styles.hotBar} ${styles[isBlurred]}`}>

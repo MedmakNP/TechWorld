@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import style from "./slide.module.css";
 import { ThemeContext } from "../../Providers/ThemeProvider";
 import { useTranslation } from "react-i18next";
@@ -12,6 +12,7 @@ function ProductCard(props) {
   const [activeCost, setActiveCost] = useState(0);
   const handleNavigate = () => {
     navigate(`/product/${data.id}`);
+    window.scrollTo({ top: 0 });
   };
   const handdleClickImg = (index) => {
     setActiveImg(index);
@@ -50,7 +51,9 @@ function ProductCard(props) {
             </div>
           ))}
         </div>
-        <button onClick={() => handleNavigate()} className={style.btn}>{t("product.btn")}</button>
+        <button onClick={() => handleNavigate()} className={style.btn}>
+          {t("product.btn")}
+        </button>
       </div>
     </div>
   );
